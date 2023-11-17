@@ -1,59 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1920"/>
-    <meta name="description"
-          content="Tizen Download API Demo" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VKAD CA Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-    <title>Tizen Download API</title>
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
 
-    <script type='text/javascript' src='$WEBAPIS/webapis/webapis.js'></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <h1>VKAD CA Forum</h1>
+        <p>Managed by Vinit Shrivastava</p>
+    </header>
 
-    <h1>Tizen Download API</h1>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#discussions">Discussions</a> |
+        <a href="#resources">Resources</a> |
+        <a href="#about">About</a>
+    </nav>
 
-    <div class="left">
-        <h2>Available buttons/actions:</h2>
+    <section id="home">
+        <h2>Welcome to VKAD CA Forum!</h2>
+        <p>This forum is a place for Chartered Accountants to discuss and share knowledge.</p>
+    </section>
 
-        <div>
-            1 - Downloaded file lists<br>
-            2 - Start download - small file<br>
-            3 - Start download - large file<br>
-            Pause - Pause download<br>
-            Play - Resume download<br>
-            Stop - Cancel download<br>
-            0 - Clear logs
-        </div>
+    <section id="discussions">
+        <h2>Discussions</h2>
+        <p>Join the discussions and engage with fellow CA professionals.</p>
+        <!-- Add discussion topics and threads here -->
+    </section>
 
-        <div id="progress" class="progress">
-            <div id="bar" class="bar"></div>
-        </div>
+    <section id="resources">
+        <h2>Resources</h2>
+        <p>Find valuable resources and information related to the field of Chartered Accountancy.</p>
+        <!-- Add links and resources here -->
+    </section>
 
-        <fieldset>
-            <legend>Downloaded files:</legend>
-            <div id="fileList" class="logs"></div>
-        </fieldset>
+    <section id="about">
+        <h2>About VKAD CA Forum</h2>
+        <p>This forum is managed by Vinit Shrivastava, dedicated to fostering a community of knowledgeable CAs.</p>
+    </section>
 
-        <fieldset>
-            <legend>Logs</legend>
-            <div id="logs" class="logs"></div>
-        </fieldset>
-    </div>
-    <div class="right">
-        <h2>Info</h2>
-
-        <p>This application demonstrates the usage of Tizen download API</p>
-
-        <p>The application downloads files from <code>http://techslides.com</code> and <code>http://download.blender.org</code>. If these domains are not accessible it will not work.<br>
-
-            You can change the source location of files to download by changing the contents of <code>url1</code> and <code>url2</code> variables in <code>main.js</code> file</cide></p>
-    </div>
-
-    <script src="main.js"></script>
+    <footer>
+        <p>&copy; 2023 VKAD CA Forum. All rights reserved.</p>
+    </footer>
 </body>
 </html>
